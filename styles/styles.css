@@ -1,0 +1,189 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ffe6f0, #f3e5ff);
+    color: #4a3f55;
+    line-height: 1.8;
+    padding: 25px;
+}
+
+
+/* Header*/
+header {
+    background: linear-gradient(to right, #ff9ebc, #d6b4ff);
+    color: #ffffff;
+    padding: 25px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.main-header h1 {
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+}
+
+.main-header p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #fff6fb;
+}
+
+/*  Navigation*/
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 18px;
+    margin-top: 15px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 10px 18px;
+    background: #ff77a9;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.main-nav a:hover {
+    background: #ffffff;
+    color: #ff77a9;
+    font-weight: bold;
+}
+
+/*  Sections */
+.section {
+    margin: 25px 0;
+    padding: 25px;
+    background: #ffffffcc;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-6px);
+}
+
+/* Section Headings */
+.section h2 {
+    font-size: 1.7rem;
+    font-style: italic;
+    color: #c24dd9;
+    border-bottom: 3px dotted #ff9ebc;
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+}
+
+.section h3 {
+    background: #ffd6ec;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-weight: normal;
+    color: #7a2c91;
+    display: inline-block;
+}
+
+/* Profile Photo*/
+.profile-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ff77a9;
+    float: left;
+    margin-right: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Images */
+img {
+    border: 3px solid #ff9ebc;
+    margin-bottom: 12px;
+    border-radius: 18px;
+}
+
+/* About Image */
+.photo-computers {
+    width: 220px;
+    border-color: #cba6ff;
+}
+
+/* Skills Image */
+.photo-skills {
+    width: 220px;
+    border-color: #ff77a9;
+}
+/* school and nwp Image */
+.photo-nwp,
+.photo-school {
+    width: 200px;
+    height: 200px;          /* force same height */
+    margin-top: 15px;
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+    display: block;
+    object-fit: cover;     /* crop nicely without distortion */
+}
+
+/* My click image */
+.mycliks,
+.myclicks {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.myclicks img {
+    width: 300px;        /* controls size */
+    max-width: 100%;     /* responsive */
+    height: auto;        /* keeps aspect ratio */
+    border-radius: 10px; /* optional, looks nice */
+}
+/* Contact Icons*/
+.icon {
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* Lists */
+ul {
+    list-style-type: lower-alpha;
+    padding-left: 25px;
+    color: #5c4a63;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 25px;
+    color: #5c4a63;
+    font-family: 'Georgia', serif;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Paragraph Styling*/
+p {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: #4a3f55;
+    margin-bottom: 12px;
+    text-indent: 0;
+}
