@@ -267,9 +267,9 @@ nav a:hover {
 
 /* IMG2 - Fixed Rounded Photo (Link to NWP) - INSIDE ASIDE3 at bottom */
 .img2 {
-    position: absolute;
-    bottom: 25px;
-    left: 50%;
+    position: fixed;
+    top: 400px;
+    right: 5%;
     transform: translateX(-50%);
     width: 110px;
     height: 110px;
