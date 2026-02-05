@@ -160,7 +160,7 @@ article:first-of-type .task2 li:nth-child(odd) {
     font-weight: bold;
 }
 
-/* TASK 5: Part 2 Task1 - Custom Blockquote (3 points + 1 point hover) */
+/* TASK 5: Part 2 Task1 - Custom Blockquote  */
 
 /* Blockquote positioning and styling */
 article:last-of-type .task1 blockquote {
@@ -186,6 +186,7 @@ article:last-of-type .task1 blockquote::before {
     align-items: center;
     justify-content: center;
     line-height: 1;
+    pointer-events: none; /* Makes quote marks non-hoverable */
 }
 
 /* Closing quote mark - circular background */
@@ -204,21 +205,21 @@ article:last-of-type .task1 blockquote::after {
     align-items: center;
     justify-content: center;
     line-height: 1;
+    pointer-events: none; /* Makes quote marks non-hoverable */
 }
 
-/* Hover effect - change header background color */
-article:last-of-type .task1:hover h4 {
+/* Hover effect - change header background color ONLY when hovering the text content */
+article:last-of-type .task1:has(blockquote:hover) h4 {
     background-color: rgb(184, 59, 2);
     padding: 5px;
     width: fit-content;
 }
 
-/* Hover effect - change quote marks background color to rgb(184, 59, 2) */
-article:last-of-type .task1:hover blockquote::before,
-article:last-of-type .task1:hover blockquote::after {
+/* Hover effect - change quote marks background color to rgb(184, 59, 2) ONLY when hovering text */
+article:last-of-type .task1 blockquote:hover::before,
+article:last-of-type .task1 blockquote:hover::after {
     background-color: rgb(184, 59, 2);
 }
-
 /* TASK 6: Part 2 Task2 - Bullet List with Icons */
 
 /* Remove default list style */
@@ -333,4 +334,5 @@ article:last-of-type .task3 span:first-child:hover ~ .correct {
 /* Hover effect - when hovering "Wrong" word, highlight wrong answer */
 article:last-of-type .task3 span:nth-child(2):hover ~ .wrong {
     background-color: rgb(153, 102, 51);
+
 }
