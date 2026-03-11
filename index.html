@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <!-- :target anchors MUST be outside and BEFORE the grid -->
+    <div id="img1" class="image-state"></div>
+    <div id="img2" class="image-state"></div>
+    <div id="img3" class="image-state"></div>
+    <div id="img4" class="image-state"></div>
+
+    <div class="grid-container">
+
+        <main class="main">
+            <!-- one img per cat, shown when its anchor is targeted -->
+            <img class="main-image target-img1" src="images/image1.jpg" alt="image 1">
+            <img class="main-image target-img2" src="images/image2.jpg" alt="image 2">
+            <img class="main-image target-img3" src="images/image3.jpg" alt="image 3">
+            <img class="main-image target-img4" src="images/image4.jpg" alt="image 4">
+        </main>
+
+        <aside class="right-menu">
+            <ul>
+                <li>
+                    <a href="#img1" title="cat1 - click me to see more">
+                        <img src="images/image1.jpg" alt="image 1">
+                    </a>
+                </li>
+                <li>
+                    <a href="#img2" title="cat2 - click me to see more">
+                        <img src="images/image2.jpg" alt="image 2">
+                    </a>
+                </li>
+                <li>
+                    <a href="#img3" title="cat3 - click me to see more">
+                        <img src="images/image3.jpg" alt="image 3">
+                    </a>
+                </li>
+                <li>
+                    <a href="#img4" title="cat4 - click me to see more">
+                        <img src="images/image4.jpg" alt="image 4">
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <footer class="footer">Midterm - Winter 2025 - Yashika</footer>
+
+    </div>
+</body>
+</html>
