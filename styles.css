@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  margin: 20px;
+}
+
+#app {
+  max-width: 800px;
+}
+
+#dishPanel {
+  background-color: #f5d9a8;
+  padding: 15px;
+  display: inline-block;
+  min-width: 200px;
+}
+
+#dishPanel h3 {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.category-btn {
+  background-color: #e8a830;
+  border: 2px solid #8B6914;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.category-btn.active {
+  box-shadow: 4px 4px 0px #2d6a2d;
+}
+
+#dishDesc {
+  background-color: #e8a830;
+  padding: 15px 20px;
+  margin-top: 0;
+  font-size: 15px;
+  max-width: 700px;
+}
+
+.dish-block {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.dish-block:last-child {
+  border-bottom: none;
+}
+
+.dish-block h2 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.dish-block img {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.dish-block p {
+  margin: 0;
+  font-size: 14px;
+}
